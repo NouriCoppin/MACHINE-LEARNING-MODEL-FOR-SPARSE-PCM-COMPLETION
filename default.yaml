@@ -1,0 +1,30 @@
+seed: 42
+
+data:
+  path: data/ncaa_sample.csv
+  val_frac: 0.15
+  test_frac: 0.15
+  num_nodes: null
+
+model:
+  d: 64
+  L: 2
+  dropout: 0.0
+  alpha_reg: 1.0
+
+loss:
+  lambda_delta: 1.0
+
+train:
+  epochs: 10          # keep small for Colab demo
+  batch_edges: 4096
+  lr: 1e-3
+  weight_decay: 1e-5
+  grad_clip: 1.0
+
+refine:
+  iters: 5
+  tau: 0.5
+
+log:
+  outdir: runs/exp
