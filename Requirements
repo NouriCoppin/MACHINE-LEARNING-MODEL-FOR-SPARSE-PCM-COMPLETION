@@ -1,0 +1,9 @@
+torch>=2.2
+numpy
+pandas
+pyyaml
+scipy
+scikit-learn
+networkx
+matplotlib
+tensorboard
