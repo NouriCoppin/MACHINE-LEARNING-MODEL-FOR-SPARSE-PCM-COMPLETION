@@ -1,2 +1,1 @@
-from .train import main as train_main
-from .eval import main as eval_main
+from .triangle import triangle_consistency_loss
